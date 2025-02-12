@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tblcustomer">
+	<!-- select 는 반드시 resultType 이 필수 : 대부분 VO
+	     select 는 parameterType 은 where 조건식에 따라서 결정됩니다.          
+		 insert,update,delete 는 parameterType 이 필수 입니다. 
+		 insert,update,delete 는 resultType 타입 없습니다.
+		 insert,update 는 parameterType 이 대부분 VO 입니다.
+	-->
+	
+
+
+</mapper>  
+
+
+
+

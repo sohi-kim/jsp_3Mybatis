@@ -15,20 +15,20 @@
 	</select>
 	<!-- 리턴타입이 List 일때에는 제너틱타입만 설정하면 됩니다. -->
 	<select id="selectAll" resultType="CustomerVo">
-		select * from tbl_custom order by custom_id
+		select * from tbl_customer order by custom_id
 	</select>
 	<!--  insert, update, delete 는 리턴타입  지정안합니다.(그래도 값은 리턴해 줍니다.) -->
 	<insert id="insert" parameterType="CustomerVo">
-		insert into tbl_custom(custom_id,name,email,age,reg_date) 
+		insert into tbl_customer(custom_id,name,email,age,reg_date) 
                     values (#{customId}, #{name}, #{email}, #{age}, sysdate)
 	</insert>
 	<update id="update" parameterType="CustomerVo">
-		update tbl_custom 
+		update tbl_customer 
 		set email = #{email}, age = #{age} 
 		where custom_id = #{customId}
 	</update>
 	<delete id="delete" parameterType="String">
-		delete from tbl_custom 
+		delete from tbl_customer 
 			where custom_id = #{customId}
 	</delete>
 
